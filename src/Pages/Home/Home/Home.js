@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../../Shared/Header/Header";
 // import Advenure from '../Advenure/Advenure';
 import GreatTravel from "../GreatTravel/GreatTravel";
 import NewsAndEvents from "../NewsAndEvents/NewsAndEvents";
@@ -9,6 +10,7 @@ import Slider from "../Slider/Slider";
 const Home = () => {
   return (
     <>
+      <Header />
       <Slider />
       <PopularTours />
       <PopularHotels />
