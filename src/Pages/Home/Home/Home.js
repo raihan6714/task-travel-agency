@@ -1,6 +1,6 @@
 import React from "react";
+import Footer from "../../Shared/Footer/Footer";
 import Header from "../../Shared/Header/Header";
-// import Advenure from '../Advenure/Advenure';
 import GreatTravel from "../GreatTravel/GreatTravel";
 import NewsAndEvents from "../NewsAndEvents/NewsAndEvents";
 import PopularHotels from "../PopularHotels/PopularHotels";
@@ -16,6 +16,7 @@ const Home = () => {
       <PopularHotels />
       <NewsAndEvents />
       <GreatTravel />
+      <Footer />
     </>
   );
 };

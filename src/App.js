@@ -1,10 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home/Home";
-import Footer from "./Pages/Shared/Footer/Footer";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
-import Login from "./Pages/Login/Login/Login";
-import Register from "./Pages/Login/Register/Register";
 import Adventure from "./Pages/Adventure/Adventure/Adventure";
 import Tours from "./Pages/Tours/Tours/Tours";
 import ToursDetails from "./Pages/Tours/ToursDetails/ToursDetails";
@@ -21,7 +18,8 @@ import Contacts from "./Pages/Contacts/Contacts";
 import Blogs from "./Pages/Blogs/Blogs";
 import Payments from "./Pages/Payments/Payments";
 import Invoice from "./Pages/Invoice/Invoice";
-import SignIn from "./Pages/Login/SignIn/SignIn";
+import Login from "./Pages/Shared/Login/Login/Login";
+import Register from "./Pages/Shared/Login/Register/Register";
 
 function App() {
   return (
@@ -48,10 +46,8 @@ function App() {
           <Route path="/invoice" element={<Invoice />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/singIn" element={<SignIn />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
       </Router>
     </div>
   );
